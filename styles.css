@@ -630,6 +630,7 @@ button[type="submit"]:after,
 }
 /*Only applies to "Narrow"*/
 .tweak-blog-item-width-narrow {
+  /*Remove Default Padding*/
   /*Blog Post Max Width*/
   /*Blog H1*/
   /*Blog H2*/
@@ -660,6 +661,9 @@ button[type="submit"]:after,
   /*Social Links*/
   /*Button Link*/
   /*Link Button Styling*/
+}
+.tweak-blog-item-width-narrow article {
+  padding: 0!important;
 }
 .tweak-blog-item-width-narrow .blog-item-wrapper .blog-item-inner-wrapper {
   margin-top: var(--blog-top) !important;
