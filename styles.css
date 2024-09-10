@@ -1369,7 +1369,7 @@ button[type="submit"]:after,
   /*List Summary Small*/
 }
 .summary-block-setting-design-list .summary-item {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--tweak-summary-block-stroke-color);
   width: 100%!important;
 }
 .summary-block-setting-design-list .sqs-gallery-design-list {
