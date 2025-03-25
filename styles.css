@@ -1,4 +1,4 @@
-/*Retrograde CSS — Updated 02/21/2025*/
+/*Retrograde CSS — Updated 03/24/2025*/
 /*Site Background Color*/
 body {
   background-color: var(--body-background) !important;
@@ -2183,6 +2183,10 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
   .eventlist {
     grid-template-columns: 1fr;
   }
+}
+/*Hide past events*/
+.eventlist.eventlist--past {
+  display: none!important;
 }
 /*Event Grid Container*/
 .events {
