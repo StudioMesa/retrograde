@@ -2084,6 +2084,10 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
     grid-template-columns: 1fr;
   }
 }
+/*Hide past events*/
+.eventlist.eventlist--past {
+  display: none!important;
+}
 /*Event Grid Container*/
 .events {
   padding-top: var(--sqs-mobile-site-gutter) !important;
