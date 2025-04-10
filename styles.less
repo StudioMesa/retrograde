@@ -1,4 +1,4 @@
-/*Retrograde CSS — Updated 03/24/2025*/
+/*Retrograde CSS — Updated 04/10/2025*/
 @fe-block-height:25.8px;
 
 /*Site Background Color*/
@@ -198,24 +198,38 @@ padding-right:0!important;}
 position:relative!important;
 padding-right:14px!important;}
 
-/*Folder Title Chevron*/
-.header-nav-folder-title:after{
-font-family: var(--inter), var(--body), sans-serif!important;
-z-index:-1!important;
-position:absolute!important;
-right:0!important;
-content:"⌵"!important;
-transform:rotateZ(0deg);
-line-height:.7!important;
-font-weight:500!important;
-transition:var(--trans)!important;}
+/*Folder Icon Transition*/
+.header-nav-item--folder .header-dropdown-flip svg, .header-nav-item--folder:hover .header-dropdown-flip svg, .header-nav .header-nav-item--folder a.header-nav-folder-title[aria-expanded='true'] .header-dropdown-flip svg{
+transition: ease .25s all!important;}
 
-/*Flip Chevron When Open*/
-.header-nav-item--folder:hover{
-.header-nav-folder-title:after{
-transform:rotateZ(180deg);
-margin-top:6px;
-transition:var(--trans)!important;}}
+/*Folder Content Transition*/
+.header-nav-item--folder{
+.header-nav-folder-content{
+display:block!important;
+opacity:0!important;
+transition: ease .25s all;}
+&:hover{
+.header-nav-folder-content{
+opacity:1!important;}}}
+
+/*Custom Chevron*/
+.header-nav-folder-title:not(:has(.header-dropdown-icon)):after {
+font-family: var(--inter), var(--body), sans-serif!important;
+z-index: -1!important;
+position: absolute!important;
+right: 0!important;
+top:40%;
+content: "⌵"!important;
+transform: rotateZ(0deg);
+line-height: 0!important;
+font-weight: 500!important;
+transition: var(--trans)!important;}
+
+/*Flip custom chevron on hover*/
+.header-nav-item--folder:hover .header-nav-folder-title:not(:has(.header-dropdown-icon)):after {
+top:60%!important;
+transform: rotateZ(180deg);
+transition: var(--trans)!important;}
 
 /*Folder*/
 .header .header-nav .header-nav-item--folder .header-nav-folder-content {
