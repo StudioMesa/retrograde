@@ -1,4 +1,4 @@
-//--- Retrograde CSS INTERLESS — Updated 04/10/2025 ---//
+//--- Retrograde CSS INTERLESS — Updated 11/20/2025 ---//
 @fe-block-height:25.8px;
 
 /*Site Background Color*/
@@ -167,10 +167,13 @@ padding-right:0!important;}
 
 
 //---FOLDER NAV---//
+/*Remove nav item default padding*/
+.header .header-nav-wrapper a, .header .language-item a{
+padding:unset!important;}
+
 /*Folder Title*/
 .header-nav-folder-title{
-position:relative!important;
-padding-right:14px!important;}
+position:relative!important;}
 
 /*Folder Icon Transition*/
 .header-nav-item--folder .header-dropdown-flip svg, .header-nav-item--folder:hover .header-dropdown-flip svg, .header-nav .header-nav-item--folder a.header-nav-folder-title[aria-expanded='true'] .header-dropdown-flip svg{
