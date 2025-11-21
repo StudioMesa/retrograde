@@ -190,11 +190,6 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 .header-burger-btn.burger {
   padding-right: 0!important;
 }
-/*Remove nav item default padding*/
-.header .header-nav-wrapper a,
-.header .language-item a {
-  padding: unset!important;
-}
 /*Folder Title*/
 .header-nav-folder-title {
   position: relative!important;
