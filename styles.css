@@ -1,4 +1,4 @@
-/*Retrograde CSS — Updated 04/20/2026*/
+/*Retrograde CSS — Updated 05/07/2026*/
 /*Site Background Color*/
 body {
   background-color: var(--body-background) !important;
@@ -578,29 +578,6 @@ button[type="submit"]:after,
   width: 10px !important;
   left: unset !important;
   top: unset !important;
-}
-.sqs-gallery-aspect-ratio-square {
-  /*Remove first image left padding*/
-  /*Persona item*/
-  /*Persona image wrapper*/
-}
-.sqs-gallery-aspect-ratio-square .slide.sqs-gallery-design-grid-slide:first-child {
-  margin-left: 0;
-}
-.sqs-gallery-aspect-ratio-square .slide.sqs-gallery-design-grid-slide {
-  border-radius: 100px!important;
-  overflow: hidden!important;
-  height: 50px!important;
-  width: 50px!important;
-  margin-left: -20px;
-  border: 5px solid var(--tweak-text-block-stroke-color);
-}
-.sqs-gallery-aspect-ratio-square .sqs-gallery-design-grid-slide img,
-.sqs-gallery-aspect-ratio-square .margin-wrapper {
-  height: 50px!important;
-  width: 50px!important;
-  object-fit: cover!important;
-  top: unset!important;
 }
 /*Grid Slide*/
 .sqs-gallery-aspect-ratio-widescreen.sqs-gallery-block-grid .slide {
