@@ -2008,7 +2008,8 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .blog-basic-grid .blog-article-spacer {
   display: none;
 }
-.blog-basic-grid .blog-basic-grid--container.is-loaded {
+.blog-basic-grid .blog-basic-grid--container.is-loaded,
+.blog-basic-grid .blog-basic-grid--container:where(section[data-definition-name="website.components.blogList"] *) {
   background: var(--secondary-color) !important;
 }
 /*FlexLoad Animation for Forms*/
